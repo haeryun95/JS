@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /**
+             * 자바스크립트 함수 4가지 유형 정리
+             * 작성자: Gemini (for 고요)
+             */
+
+            // [유형 1] 입력값(X), 출력값(X)
+            // 용도: 외부 데이터 필요 없이 정해진 특정 동작을 수행할 때 사용.
+            function displayNotice() {
+                console.log("--- 시스템 공지: 프로그램이 시작되었습니다. ---");
+            }
+
+            // [유형 2] 입력값(X), 출력값(O)
+            // 용도: 함수 내부에서 생성된 데이터나 고정된 값을 외부로 전달할 때 사용.
+            function getCurrentYear() {
+                const year = 2026;
+                return year; // 결과값을 반환
+            }
+
+            // [유형 3] 입력값(O), 출력값(X)
+            // 용도: 외부 데이터를 받아 처리하지만, 별도의 반환값 없이 작업을 마무리할 때 사용.
+            function printf(text) {
+                document.write(text + "<br>"); // 매개변수 text를 활용해 화면에 출력
+            }
+
+            // [유형 4] 입력값(O), 출력값(O)
+            // 용도: 데이터를 입력받아 연산/가공한 후, 그 결과를 다시 호출자에게 돌려줄 때 사용. (가장 재사용성이 높음)
+            function calculateSum(a, b) {
+                return a + b; // 두 인자를 더해 결과를 반환
+            }
+
+            // --- 실행 예시 ---
+
+            // 1. 단순 실행
+            displayNotice();
+
+            // 2. 값만 받아오기
+            let year = getCurrentYear();
+            printf("현재 연도: " + year);
+
+            // 3. 데이터 전달하여 출력 (유형 3 활용)
+            printf("안녕하세요, 고요님.");
+
+            // 4. 연산 후 결과 활용
+            let result = calculateSum(100, 200);
+            printf("연산 결과: " + result);
+        </script>
+    </body>
+</html>
