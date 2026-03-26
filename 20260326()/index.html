@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>basic selector</title>
+        <style>
+            #box.active {
+                width: 300px;
+                height: 300px;
+                background-color: darkgreen;
+            }
+            .green {
+                color: green;
+            }
+            #rainbow li {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                list-style: none;
+                margin: 20px auto;
+                /* background: green; */
+                border: 2px solid #333;
+            }
+        </style>
+    </head>
+    <body class="body god" id="body">
+        나 body야!
+        <h1 id="title" class="dog cat cammel rabbit">Javascript Basic Selector</h1>
+        <div class="container">
+            <ul id="list1" class="list">
+                <li class="item">li 1</li>
+                <li class="item">li 2</li>
+                <li>li 3</li>
+                <li>li 4</li>
+                <li>li 5</li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul id="list2" class="list">
+                <li class="item">li 1</li>
+                <li>li 2</li>
+                <li class="item">li 3</li>
+                <li>li 4</li>
+                <li>li 5</li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul id="list3" class="list">
+                <li class="red" name="red">li 1</li>
+                <li>li 2</li>
+                <li>li 3</li>
+                <li>li 4</li>
+                <li id="list3_5">li 5</li>
+                <li>li 6</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div id="box">
+                box level1
+                <div>
+                    box level2
+                    <div>box level3</div>
+                </div>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id, corporis, blanditiis quam dicta amet quidem eum impedit harum consequuntur
+            aspernatur ratione nostrum vel culpa fuga! Dolore quibusdam nisi temporibus!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id, corporis, blanditiis quam dicta amet quidem eum impedit harum consequuntur
+            aspernatur ratione nostrum vel culpa fuga! Dolore quibusdam nisi temporibus!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id, corporis, blanditiis quam dicta amet quidem eum impedit harum consequuntur
+            aspernatur ratione nostrum vel culpa fuga! Dolore quibusdam nisi temporibus!
+        </p>
+        <!-- 무지개 -->
+        <h2>무지개</h2>
+        <ul id="rainbow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <script src="js/basic-seletcor.js"></script>
+    </body>
+</html>

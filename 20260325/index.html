@@ -52,6 +52,18 @@
             // 4. 연산 후 결과 활용
             let result = calculateSum(100, 200);
             printf("연산 결과: " + result);
+
+            //익명함수 | 함수이름이 없다. 사용하고 싶은 시점에 호출불가! 사용시점에만 바로 사용!
+
+            // forEach(function(){})    ==> (function(){})()
+            (function () {
+                let username = prompt("이름을 입력하세요.");
+            })();
+
+            (() => console.log("====="))();
+            const love = () => console.log("love");
+
+            love();
         </script>
     </body>
 </html>
