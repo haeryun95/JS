@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tv-set {
+    width: 900px;
+    height: 931px;
+    background: url(../images/—Pngtree—tv\ set\ cartoon\ hand\ painted_3806104.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.tv-set .tv-dial {
+    position: absolute;
+    top: 392px;
+    right: 210px;
+    width: 69px;
+    height: 69px;
+}
+.tv-set .tv-dial img {
+    width: 100%;
+    height: 100%;
+}
+.tv-set .tv-frame {
+    position: absolute;
+    top: 376px;
+    left: 197px;
+    width: 405px;
+    height: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.tv-set .tv-frame .tv-channel {
+    display: none;
+}
+.tv-set .tv-frame .tv-channel img {
+    display: none;
+}
+.tv-set .tv-frame .tv-channel.on {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.tv-set .tv-frame .tv-channel.on img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
